@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcam Object Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Webcam Object Detection</h1>
+    <video id="webcam" autoplay playsinline></video>
+    <div class="button-container">
+        <button id="front-camera">Front Camera</button>
+        <button id="back-camera">Back Camera</button>
+        <button id="predict-button">Predict</button>
+    </div>
+    <h3>Detected Object: <span id="object-name"></span></h3>
+    <h3>Score: <span id="object-score"></span></h3>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    <script src="app.js"></script>
+</body>
+</html>
